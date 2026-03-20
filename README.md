@@ -15,21 +15,29 @@
 - PWA支持
 
 ## 访问地址
-GitHub Pages: https://kamanhung0630-boop.github.io/insurance-plan/
+**主链接 (新)**: https://kamanhung0630-boop.github.io/insurance-scheme-h5/
+
+**备用链接**: https://kamanhung0630-boop.github.io/insurance-plan/
 
 二维码生成：可以使用以下服务生成二维码：
-- https://qrcode.tec-it.com
+- https://qrcode.tec-it.com/zh?data=https://kamanhung0630-boop.github.io/insurance-scheme-h5/
 - https://www.qr-code-generator.com
 
 ## 本地运行
 1. 克隆仓库
 ```bash
+# 使用新仓库
+git clone https://github.com/kamanhung0630-boop/insurance-scheme-h5.git
+
+# 或使用原仓库
 git clone https://github.com/kamanhung0630-boop/insurance-plan.git
 ```
 2. 在浏览器中打开 `index.html`
 
 ## 部署
-已自动部署到GitHub Pages，分支 `master` 为发布分支。
+已自动部署到GitHub Pages：
+- 新仓库：`insurance-scheme-h5`，分支 `main` 为发布分支
+- 原仓库：`insurance-plan`，分支 `master` 为发布分支
 
 ## 文件结构
 ```
