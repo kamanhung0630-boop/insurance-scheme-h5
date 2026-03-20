@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>友邦保险 - 盈御多元货币计划3 | 教育金方案</title>
+    <meta name="description" content="友邦保险盈御多元货币计划3 - 为35岁女性客户量身定制的HKD教育金储蓄方案">
+    <!-- PWA Meta -->
+    <meta name="theme-color" content="#0056B3">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="友邦保险方案">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- iOS图标 -->
+    <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/svgs/solid/shield-alt.svg">
+    <!-- Android图标 -->
+    <link rel="icon" type="image/svg+xml" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/svgs/solid/shield-alt.svg">
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Font Awesome 图标 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- 自定义CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- 品牌色彩定义 -->
+    <style>
+        :root {
+            --aia-primary: #0056B3;
+            --aia-secondary: #007BFF;
+            --aia-accent: #FF6B35;
+            --aia-background: #F8F9FA;
+            --aia-text: #212529;
+            --aia-text-light: #6C757D;
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: var(--aia-primary);">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <i class="fas fa-shield-alt fa-2x me-3"></i>
+                <div>
+                    <h1 class="h4 mb-0">友邦保险</h1>
+                    <small class="text-light">AIA Group Limited</small>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#company-intro">公司介绍</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#product-intro">产品特点</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#calculator">方案计算</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cash-value">现金价值</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主容器 -->
+    <main class="container mt-5 pt-5">
+        <!-- 页面标题 -->
+        <header class="text-center my-5">
+            <h1 class="display-4 fw-bold text-primary">盈御多元货币计划3</h1>
+            <p class="lead text-muted">HKD教育金储蓄方案 - 为35岁女性客户量身定制</p>
+            <div class="alert alert-info" role="alert">
+                <i class="fas fa-info-circle me-2"></i>
+                本方案基于年缴保费50,000 HKD，缴费期5年，专为教育金规划设计
+            </div>
+        </header>
+
+        <!-- 第1部分：保险公司介绍 -->
+        <section id="company-intro" class="card shadow mb-5">
+            <div class="card-header bg-primary text-white">
+                <h2 class="h4 mb-0"><i class="fas fa-building me-2"></i>友邦保险公司介绍</h2>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <p class="lead">友邦保险控股有限公司及其附属公司（统称「友邦保险」或「本集团」）是最大的泛亚地区独立上市人寿保险集团。</p>
+                        <p>友邦保险成立于1919年，拥有超过100年的历史，业务覆盖亚太区18个市场。集团为超过3,900万份个人保单的持有人及逾1,600万名团体保险计划的参与成员提供服务。</p>
+                        <p>友邦保险致力于帮助大众健康、长久、好生活，并提供全面的保险及理财方案，满足客户在保障、储蓄及投资方面的需要。</p>
+                        <div class="row mt-4">
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="fas fa-globe-asia fa-2x text-primary me-3"></i>
+                                    <div>
+                                        <h5 class="mb-1">覆盖18个市场</h5>
+                                        <p class="mb-0 text-muted">亚太地区广泛网络</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="fas fa-users fa-2x text-primary me-3"></i>
+                                    <div>
+                                        <h5 class="mb-1">服务3900万客户</h5>
+                                        <p class="mb-0 text-muted">庞大的客户基础</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card bg-light border-0">
+                            <div class="card-body text-center">
+                                <i class="fas fa-award fa-4x text-primary mb-3"></i>
+                                <h5 class="card-title">财务实力评级</h5>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2">标准普尔：AA-</li>
+                                    <li class="mb-2">穆迪：Aa3</li>
+                                    <li class="mb-2">惠誉：AA-</li>
+                                </ul>
+                                <p class="small text-muted">（评级截至2024年12月）</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 第2部分：产品介绍 -->
+        <section id="product-intro" class="card shadow mb-5">
+            <div class="card-header bg-primary text-white">
+                <h2 class="h4 mb-0"><i class="fas fa-star me-2"></i>盈御多元货币计划3 产品特点</h2>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body text-center">
+                                <i class="fas fa-money-bill-wave fa-3x text-primary mb-3"></i>
+                                <h5 class="card-title">多元货币选择</h5>
+                                <p class="card-text">提供多种货币选择，包括USD、HKD、CNY等，灵活应对汇率波动。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body text-center">
+                                <i class="fas fa-chart-line fa-3x text-primary mb-3"></i>
+                                <h5 class="card-title">长期储蓄增值</h5>
+                                <p class="card-text">结合保证和非保证回报，提供长期财富增值潜力，适合退休规划。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body text-center">
+                                <i class="fas fa-retirement fa-3x text-primary mb-3"></i>
+                                <h5 class="card-title">教育金规划</h5>
+                                <p class="card-text">专为教育金需求设计，提供稳定的现金流和长期财务保障。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 第3部分：客户画像 -->
+        <section id="customer-profile" class="card shadow mb-5">
+            <div class="card-header bg-primary text-white">
+                <h2 class="h4 mb-0"><i class="fas fa-user me-2"></i>客户画像</h2>
+            </div>
+            <div class="card-body">
+                <div class="row align-items-center">
+                    <div class="col-md-3 text-center">
+                        <div class="profile-avatar mb-3">
+                            <i class="fas fa-user-circle fa-6x text-primary"></i>
+                        </div>
+                        <h4 class="mb-0">35岁</h4>
+                        <p class="text-muted">女性客户</p>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><i class="fas fa-bullseye me-2 text-primary"></i>财务目标</h5>
+                                        <p class="card-text">教育金规划，目标为孩子大学教育提供资金支持。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><i class="fas fa-calendar-alt me-2 text-primary"></i>时间规划</h5>
+                                        <p class="card-text">15-20年积累期，适合中期储蓄和复利增长。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><i class="fas fa-shield-alt me-2 text-primary"></i>风险承受</h5>
+                                        <p class="card-text">中等风险承受能力，寻求平衡的保证与非保证回报。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><i class="fas fa-globe-americas me-2 text-primary"></i>货币偏好</h5>
+                                        <p class="card-text">偏好HKD资产配置，应对潜在汇率波动。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 第4部分：方案参数 -->
+        <section id="plan-parameters" class="card shadow mb-5">
+            <div class="card-header bg-primary text-white">
+                <h2 class="h4 mb-0"><i class="fas fa-cogs me-2"></i>方案参数</h2>
+            </div>
+            <div class="card-body">
+                <div class="row text-center">
+                    <div class="col-md-4 mb-4">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body">
+                                <i class="fas fa-money-bill-wave fa-3x text-primary mb-3"></i>
+                                <h3 class="display-6 fw-bold" id="plan-currency">HKD</h3>
+                                <p class="card-text">货币</p>
+                                <p class="small text-muted">港币资产配置</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body">
+                                <i class="fas fa-calendar-check fa-3x text-primary mb-3"></i>
+                                <h3 class="display-6 fw-bold" id="plan-years">5</h3>
+                                <p class="card-text">缴费年限</p>
+                                <p class="small text-muted">年缴，共5年</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body">
+                                <i class="fas fa-dollar-sign fa-3x text-primary mb-3"></i>
+                                <h3 class="display-6 fw-bold" id="plan-premium">50,000</h3>
+                                <p class="card-text">年缴保费 (HKD)</p>
+                                <p class="small text-muted">每年缴费金额</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="alert alert-secondary mt-4">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5><i class="fas fa-calculator me-2"></i>总缴费金额</h5>
+                            <p class="h3 fw-bold" id="total-payment">250,000 HKD</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h5><i class="fas fa-coins me-2"></i>预计退休金</h5>
+                            <p class="h3 fw-bold text-success" id="estimated-pension">-</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 第5部分：交互式计算器 -->
+        <section id="calculator" class="card shadow mb-5">
+            <div class="card-header bg-primary text-white">
+                <h2 class="h4 mb-0"><i class="fas fa-calculator me-2"></i>保费调整计算器</h2>
+            </div>
+            <div class="card-body">
+                <div class="calculator">
+                    <div class="calculator-header mb-4">
+                        <h4 class="mb-3">调整年缴保费以查看不同方案效果</h4>
+                        <div class="current-premium h5">
+                            当前保费: <span class="badge bg-primary fs-4" id="premium-value">50,000</span> HKD
+                        </div>
+                    </div>
+
+                    <div class="calculator-controls row">
+                        <div class="col-lg-6 mb-4">
+                            <div class="slider-container">
+                                <label for="premium-slider" class="form-label h5">调整年缴保费 (USD)</label>
+                                <input type="range" class="form-range" id="premium-slider" min="10000" max="100000" step="5000" value="50000">
+                                <div class="slider-labels d-flex justify-content-between mt-2">
+                                    <span class="text-muted">10,000</span>
+                                    <span class="text-muted">55,000</span>
+                                    <span class="text-muted">100,000</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 mb-4">
+                            <div class="input-container">
+                                <label for="premium-input" class="form-label h5">或直接输入金额</label>
+                                <div class="input-group input-group-lg">
+                                    <span class="input-group-text">USD</span>
+                                    <input type="number" class="form-control" id="premium-input" min="10000" max="100000" value="50000" step="5000">
+                                    <button class="btn btn-outline-secondary" type="button" id="apply-premium">
+                                        <i class="fas fa-check"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 第6部分：现金价值预测 -->
+        <section id="cash-value" class="card shadow mb-5">
+            <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+                <h2 class="h4 mb-0"><i class="fas fa-table me-2"></i>现金价值预测</h2>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="show-chart-toggle" checked>
+                    <label class="form-check-label text-white" for="show-chart-toggle">显示图表</label>
+                </div>
+            </div>
+            <div class="card-body">
+                <!-- 图表容器 -->
+                <div class="chart-container mb-5" id="chart-container">
+                    <canvas id="cashValueChart"></canvas>
+                </div>
+
+                <!-- 预测表格 -->
+                <div class="prediction-table">
+                    <div class="table-responsive">
+                        <table class="table table-hover table-striped">
+                            <thead class="table-primary">
+                                <tr>
+                                    <th>保单年度</th>
+                                    <th>年龄</th>
+                                    <th>累计保费 (HKD)</th>
+                                    <th>总现金价值 (HKD)</th>
+                                    <th>佔總保費倍數</th>
+                                    <th>階段性意義</th>
+                                </tr>
+                            </thead>
+                            <tbody id="cash-value-table">
+                                <!-- 动态生成行 -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="bg-dark text-white py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h5 class="mb-3">免责声明</h5>
+                    <p class="small">本演示仅为说明目的，不构成保险建议或销售要约。实际保单条款以友邦保险正式保单文件为准。现金价值预测基于假设回报率，实际回报可能有所不同。保险产品存在投资风险，过往表现不代表未来回报。在做出任何保险决策前，请咨询专业财务顾问。</p>
+                    <p class="small">友邦保险控股有限公司（AIA Group Limited）注册地址：香港中环干诺道中1号友邦金融中心</p>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="mb-3">联系方式</h5>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2"><i class="fas fa-phone me-2"></i>客户服务热线: +852 2232 8888</li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2"></i>电子邮件: customer.service@aia.com</li>
+                        <li class="mb-2"><i class="fas fa-globe me-2"></i>官方网站: www.aia.com.hk</li>
+                    </ul>
+                    <p class="small mt-4">&copy; 2024 友邦保险控股有限公司。保留所有权利。</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 底部悬浮预约按钮 -->
+    <div class="floating-action-buttons">
+        <button class="btn btn-primary btn-lg rounded-circle shadow-lg floating-btn" id="appointment-btn" title="预约咨询">
+            <i class="fas fa-calendar-check fa-2x"></i>
+        </button>
+        <button class="btn btn-success btn-lg rounded-circle shadow-lg floating-btn" id="share-btn" title="分享方案" style="bottom: 120px;">
+            <i class="fas fa-share-alt fa-2x"></i>
+        </button>
+        <button class="btn btn-warning btn-lg rounded-circle shadow-lg floating-btn" id="print-btn" title="导出PDF" style="bottom: 210px;">
+            <i class="fas fa-file-pdf fa-2x"></i>
+        </button>
+    </div>
+
+    <!-- 预约表单模态框 -->
+    <div class="modal fade" id="appointmentModal" tabindex="-1" aria-labelledby="appointmentModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="appointmentModalLabel"><i class="fas fa-calendar-check me-2"></i>预约咨询</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="appointmentForm">
+                        <div class="mb-3">
+                            <label for="clientName" class="form-label">姓名</label>
+                            <input type="text" class="form-control" id="clientName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="clientPhone" class="form-label">电话</label>
+                            <input type="tel" class="form-control" id="clientPhone" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="clientEmail" class="form-label">电子邮件</label>
+                            <input type="email" class="form-control" id="clientEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="appointmentDate" class="form-label">偏好预约时间</label>
+                            <input type="date" class="form-control" id="appointmentDate" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="appointmentNotes" class="form-label">备注</label>
+                            <textarea class="form-control" id="appointmentNotes" rows="3" placeholder="请简要说明您的需求..."></textarea>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="agreeTerms" required>
+                            <label class="form-check-label" for="agreeTerms">
+                                我同意友邦保险联系我并提供相关保险资讯
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">提交预约</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- 自定义JS -->
+    <script src="js/main.js"></script>
+    <script src="js/calculator.js"></script>
+    <script src="js/chart.js"></script>
+
+    <!-- OpenCC繁简转换库 -->
+    <script src="https://cdn.jsdelivr.net/npm/opencc-js@1.0.5/dist/opencc-js.min.js"></script>
+
+    <!-- 页面加载后初始化 -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('页面加载完成，开始初始化...');
+
+            // 繁简转换：简体转繁体
+            try {
+                const converter = OpenCC.Converter({ from: 'cn', to: 'tw' });
+                document.body.innerHTML = converter(document.body.innerHTML);
+                console.log('已转换页面内容为繁体中文');
+            } catch (error) {
+                console.warn('繁简转换失败:', error);
+            }
+
+            // 初始化整个页面
+            if (typeof initializePage === 'function') {
+                console.log('调用initializePage初始化页面...');
+                initializePage();
+            } else {
+                console.warn('initializePage函数未定义，尝试单独初始化...');
+
+                // 回退方案：单独初始化各模块
+                if (typeof initializeCalculator === 'function') {
+                    console.log('初始化计算器...');
+                    initializeCalculator();
+                }
+
+                if (typeof initializeChart === 'function') {
+                    console.log('初始化图表...');
+                    initializeChart();
+                }
+            }
+
+            // 平滑滚动（独立于页面初始化）
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 70,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            console.log('页面初始化完成');
+        });
+    </script>
+</body>
+</html>

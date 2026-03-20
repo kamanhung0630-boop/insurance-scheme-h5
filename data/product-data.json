@@ -1,0 +1,118 @@
+{
+  "product": {
+    "name": "盈御多元货币计划3",
+    "description": "多元货币储蓄保险计划，提供长期财富增值和教育金规划",
+    "features": [
+      "多元货币选择 (USD/HKD/CNY等)",
+      "长期储蓄增值潜力",
+      "退休金规划方案",
+      "财富传承功能",
+      "灵活的缴费安排",
+      "部分提取选项"
+    ],
+    "benefits": [
+      "保证现金价值提供稳定回报",
+      "非保证现金价值提供增值潜力",
+      "多种货币选择应对汇率波动",
+      "长期复利增长效应"
+    ]
+  },
+  "company": {
+    "name": "友邦保险控股有限公司",
+    "introduction": "友邦保险是最大的泛亚地区独立上市人寿保险集团，成立于1919年，拥有超过100年的历史。集团业务覆盖亚太区18个市场，为超过3,900万份个人保单的持有人及逾1,600万名团体保险计划的参与成员提供服务。",
+    "strengths": [
+      "财务实力雄厚 (标准普尔: AA-, 穆迪: Aa3)",
+      "百年历史与丰富经验",
+      "广泛的亚太地区网络",
+      "专业的客户服务团队"
+    ]
+  },
+  "calculation": {
+    "guaranteedRate": 0.02,
+    "nonGuaranteedRates": {
+      "year1_5": 0.03,
+      "year6_10": 0.04,
+      "year11_plus": 0.05
+    },
+    "assumptions": "上述回报率仅为演示用途，实际回报可能有所不同。保证现金价值根据保单条款确定，非保证现金价值受投资表现影响。"
+  },
+  "cashValueBenchmark": {
+    "basePremium": 250000,
+    "currency": "HKD",
+    "dataPoints": [
+      {
+        "year": 5,
+        "age": 40,
+        "accumulatedPremium": 250000,
+        "totalCashValue": 190000,
+        "premiumMultiple": 0.76,
+        "significance": "繳費期滿，不建議提取",
+        "returnStatus": "尚未回本"
+      },
+      {
+        "year": 8,
+        "age": 43,
+        "accumulatedPremium": 250000,
+        "totalCashValue": 250000,
+        "premiumMultiple": 1.0,
+        "significance": "預期回本期",
+        "returnStatus": "回本"
+      },
+      {
+        "year": 9,
+        "age": 44,
+        "accumulatedPremium": 250000,
+        "totalCashValue": 260000,
+        "premiumMultiple": 1.04,
+        "significance": "預期回本期",
+        "returnStatus": "回本"
+      },
+      {
+        "year": 15,
+        "age": 50,
+        "accumulatedPremium": 250000,
+        "totalCashValue": 400000,
+        "premiumMultiple": 1.6,
+        "significance": "可考慮紅利鎖定",
+        "returnStatus": "增值期"
+      },
+      {
+        "year": 20,
+        "age": 55,
+        "accumulatedPremium": 250000,
+        "totalCashValue": 575000,
+        "premiumMultiple": 2.3,
+        "significance": "孩子大學教育金",
+        "returnStatus": "增值期"
+      },
+      {
+        "year": 30,
+        "age": 65,
+        "accumulatedPremium": 250000,
+        "totalCashValue": 1150000,
+        "premiumMultiple": 4.6,
+        "significance": "媽媽退休金",
+        "returnStatus": "退休規劃"
+      },
+      {
+        "year": 40,
+        "age": 75,
+        "accumulatedPremium": 250000,
+        "totalCashValue": 2250000,
+        "premiumMultiple": 9.0,
+        "significance": "指數級增長",
+        "returnStatus": "財富累積"
+      },
+      {
+        "year": 50,
+        "age": 85,
+        "accumulatedPremium": 250000,
+        "totalCashValue": 4250000,
+        "premiumMultiple": 17.0,
+        "significance": "財富傳承給孫輩",
+        "returnStatus": "財富傳承"
+      }
+    ]
+  },
+  "disclaimer": "本演示仅为说明目的，不构成保险建议或销售要约。实际保单条款以友邦保险正式保单文件为准。现金价值预测基于假设回报率，实际回报可能有所不同。保险产品存在投资风险，过往表现不代表未来回报。在做出任何保险决策前，请咨询专业财务顾问。"
+}

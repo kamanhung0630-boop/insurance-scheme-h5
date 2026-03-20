@@ -1,0 +1,412 @@
+/* 友邦保险盈御多元货币计划3 - 响应式样式 */
+
+/* 超小屏幕 (小于576px) */
+@media (max-width: 575.98px) {
+    /* 导航栏调整 */
+    .navbar-brand {
+        font-size: 0.9rem;
+    }
+
+    .navbar-brand h1 {
+        font-size: 1.1rem;
+    }
+
+    .navbar-brand small {
+        font-size: 0.65rem;
+    }
+
+    /* 标题调整 */
+    .display-4 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .lead {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    /* 卡片内边距调整 */
+    .card-header {
+        padding: 1rem;
+    }
+
+    .card-body {
+        padding: 1rem;
+    }
+
+    /* 客户画像调整 */
+    .profile-avatar {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .profile-avatar i {
+        font-size: 3rem;
+    }
+
+    /* 方案参数卡片 */
+    #plan-parameters .card {
+        margin-bottom: 1rem;
+        border-left-width: 3px;
+    }
+
+    #plan-parameters .display-6 {
+        font-size: 1.75rem;
+    }
+
+    /* 计算器调整 */
+    .calculator {
+        padding: 1rem;
+    }
+
+    .calculator-controls .col-lg-6 {
+        margin-bottom: 1.5rem;
+    }
+
+    .slider-container,
+    .input-container {
+        padding: 1rem;
+    }
+
+    .input-group {
+        flex-direction: column;
+    }
+
+    .input-group-text {
+        border-radius: 8px 8px 0 0;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .form-control {
+        border-radius: 0 0 8px 8px;
+        width: 100%;
+    }
+
+    .input-group .btn {
+        margin-top: 0.5rem;
+        border-radius: 8px;
+        width: 100%;
+    }
+
+    /* 表格调整 */
+    .table-responsive {
+        font-size: 0.85rem;
+    }
+
+    .table thead th,
+    .table tbody td {
+        padding: 0.75rem 0.5rem;
+    }
+
+    /* 图表容器 */
+    .chart-container {
+        padding: 1rem;
+    }
+
+    #cashValueChart {
+        height: 250px !important;
+    }
+
+    /* 页脚调整 */
+    footer {
+        padding: 2rem 0 !important;
+    }
+
+    footer .row > div {
+        margin-bottom: 2rem;
+    }
+
+    footer h5 {
+        font-size: 1.1rem;
+    }
+
+    /* 页面边距 */
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    main.container {
+        margin-top: 4rem !important;
+        padding-top: 1rem !important;
+    }
+}
+
+/* 小屏幕 (576px - 767.98px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* 导航栏调整 */
+    .navbar-brand h1 {
+        font-size: 1.2rem;
+    }
+
+    /* 标题调整 */
+    .display-4 {
+        font-size: 2.5rem;
+    }
+
+    /* 客户画像调整 */
+    .profile-avatar i {
+        font-size: 4rem;
+    }
+
+    /* 方案参数卡片 */
+    #plan-parameters .display-6 {
+        font-size: 2rem;
+    }
+
+    /* 计算器调整 */
+    .calculator-controls .col-lg-6 {
+        margin-bottom: 2rem;
+    }
+
+    /* 表格调整 */
+    .table {
+        font-size: 0.9rem;
+    }
+
+    /* 图表容器 */
+    #cashValueChart {
+        height: 300px !important;
+    }
+
+    /* 页脚调整 */
+    footer .row > div {
+        margin-bottom: 2rem;
+    }
+}
+
+/* 中等屏幕 (768px - 991.98px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* 导航栏调整 */
+    .navbar-brand h1 {
+        font-size: 1.3rem;
+    }
+
+    /* 标题调整 */
+    .display-4 {
+        font-size: 2.75rem;
+    }
+
+    /* 客户画像调整 */
+    .profile-avatar i {
+        font-size: 4.5rem;
+    }
+
+    /* 方案参数卡片 */
+    #plan-parameters .display-6 {
+        font-size: 2.25rem;
+    }
+
+    /* 计算器调整 */
+    .calculator-controls .col-lg-6 {
+        margin-bottom: 0;
+    }
+
+    /* 表格调整 */
+    .table {
+        font-size: 0.95rem;
+    }
+
+    /* 图表容器 */
+    #cashValueChart {
+        height: 350px !important;
+    }
+}
+
+/* 大屏幕 (992px - 1199.98px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /* 图表容器 */
+    #cashValueChart {
+        height: 400px !important;
+    }
+}
+
+/* 超大屏幕 (1200px 以上) */
+@media (min-width: 1200px) {
+    /* 图表容器 */
+    #cashValueChart {
+        height: 450px !important;
+    }
+
+    /* 容器最大宽度 */
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/* 横屏模式调整 */
+@media (max-height: 768px) and (orientation: landscape) {
+    /* 导航栏高度调整 */
+    .navbar {
+        padding: 0.5rem 0;
+    }
+
+    /* 主容器上边距调整 */
+    main.container {
+        margin-top: 3.5rem !important;
+    }
+
+    /* 卡片内边距调整 */
+    .card-body {
+        padding: 1.25rem;
+    }
+
+    /* 表格行高调整 */
+    .table tbody td {
+        padding: 0.75rem;
+    }
+}
+
+/* 高DPI屏幕 */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    /* 优化边框和阴影 */
+    .card {
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .navbar {
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    /* 优化图标和文字 */
+    i, .fas, .far, .fab {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+
+/* 触摸设备优化 */
+@media (hover: none) and (pointer: coarse) {
+    /* 增大点击目标 */
+    .nav-link {
+        padding: 0.75rem 1rem !important;
+    }
+
+    .btn, .form-control, .form-range::-webkit-slider-thumb {
+        min-height: 44px;
+    }
+
+    .form-range::-webkit-slider-thumb {
+        width: 28px;
+        height: 28px;
+    }
+
+    /* 移除悬停效果 */
+    .card:hover {
+        transform: none;
+    }
+
+    .btn-primary:hover {
+        transform: none;
+    }
+
+    /* 表格行间距 */
+    .table tbody tr {
+        min-height: 44px;
+    }
+
+    /* 输入框字体大小 */
+    .form-control {
+        font-size: 16px; /* 防止iOS缩放 */
+    }
+}
+
+/* 折叠设备优化 */
+@media (max-width: 767.98px) {
+    /* 防止表格内容溢出 */
+    .table td, .table th {
+        white-space: normal;
+        word-wrap: break-word;
+    }
+
+    /* 卡片堆叠 */
+    .row > [class*="col-"] {
+        margin-bottom: 1.5rem;
+    }
+
+    /* 减少垂直间距 */
+    section.card {
+        margin-bottom: 2rem !important;
+    }
+
+    /* 图表容器高度 */
+    .chart-container {
+        margin-bottom: 2rem;
+    }
+}
+
+/* 打印优化 */
+@media print {
+    @page {
+        margin: 0.5in;
+    }
+
+    body {
+        font-size: 12pt;
+        line-height: 1.4;
+    }
+
+    .container {
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+
+    /* 隐藏不需要打印的元素 */
+    .navbar, footer, .calculator-controls, .form-check,
+    .alert-info, .btn, .input-group, .slider-container {
+        display: none !important;
+    }
+
+    /* 卡片打印样式 */
+    .card {
+        border: 1px solid #000 !important;
+        box-shadow: none !important;
+        page-break-inside: avoid;
+    }
+
+    .card-header {
+        background-color: #fff !important;
+        color: #000 !important;
+        border-bottom: 2px solid #000 !important;
+    }
+
+    /* 表格打印样式 */
+    .table {
+        border: 1px solid #000 !important;
+        font-size: 10pt;
+    }
+
+    .table thead th {
+        background-color: #fff !important;
+        color: #000 !important;
+        border-bottom: 2px solid #000 !important;
+    }
+
+    .table tbody td {
+        border-color: #ccc !important;
+    }
+
+    /* 图表打印样式 */
+    #cashValueChart {
+        height: 300px !important;
+        filter: grayscale(100%);
+    }
+
+    /* 链接打印样式 */
+    a[href^="http"]:after {
+        content: " (" attr(href) ")";
+        font-size: 90%;
+        color: #666;
+    }
+
+    /* 避免分页中断 */
+    h1, h2, h3, h4 {
+        page-break-after: avoid;
+    }
+
+    table, figure, .chart-container {
+        page-break-inside: avoid;
+    }
+}

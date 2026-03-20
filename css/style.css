@@ -1,0 +1,471 @@
+/* 友邦保险盈御多元货币计划3 - 主样式文件 */
+
+/* 基础样式 */
+:root {
+    --aia-primary: #0056B3;
+    --aia-secondary: #007BFF;
+    --aia-accent: #FF6B35;
+    --aia-background: #F8F9FA;
+    --aia-text: #212529;
+    --aia-text-light: #6C757D;
+    --aia-success: #198754;
+    --aia-warning: #FFC107;
+    --aia-danger: #DC3545;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans SC', sans-serif;
+    color: var(--aia-text);
+    background-color: var(--aia-background);
+    line-height: 1.6;
+}
+
+/* 导航栏样式 */
+.navbar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 0.75rem 0;
+}
+
+.navbar-brand h1 {
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.navbar-brand small {
+    font-size: 0.75rem;
+    opacity: 0.9;
+}
+
+.nav-link {
+    font-weight: 500;
+    padding: 0.5rem 1rem !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--aia-accent) !important;
+}
+
+/* 卡片样式 */
+.card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1) !important;
+}
+
+.card-header {
+    border-bottom: none;
+    padding: 1.25rem 1.5rem;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+/* 标题样式 */
+.display-4 {
+    font-weight: 700;
+    color: var(--aia-primary);
+    margin-bottom: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    color: var(--aia-text);
+}
+
+.text-primary {
+    color: var(--aia-primary) !important;
+}
+
+.text-secondary {
+    color: var(--aia-secondary) !important;
+}
+
+/* 按钮样式 */
+.btn-primary {
+    background-color: var(--aia-primary);
+    border-color: var(--aia-primary);
+    padding: 0.5rem 1.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--aia-secondary);
+    border-color: var(--aia-secondary);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 86, 179, 0.3);
+}
+
+.btn-outline-primary {
+    color: var(--aia-primary);
+    border-color: var(--aia-primary);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--aia-primary);
+    border-color: var(--aia-primary);
+}
+
+/* 客户画像样式 */
+.profile-avatar {
+    padding: 1.5rem;
+    background-color: rgba(0, 86, 179, 0.1);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.profile-avatar i {
+    color: var(--aia-primary);
+}
+
+/* 方案参数卡片 */
+#plan-parameters .card {
+    height: 100%;
+    border-left: 4px solid var(--aia-primary);
+}
+
+#plan-parameters .display-6 {
+    color: var(--aia-primary);
+    margin: 1rem 0;
+}
+
+/* 计算器样式 */
+.calculator {
+    background-color: white;
+    border-radius: 12px;
+    padding: 2rem;
+}
+
+.calculator-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.calculator-header h4 {
+    color: var(--aia-text);
+    font-weight: 600;
+}
+
+.current-premium {
+    font-size: 1.25rem;
+    color: var(--aia-text-light);
+}
+
+.current-premium .badge {
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+}
+
+/* 滑块样式 */
+.slider-container {
+    background-color: rgba(0, 86, 179, 0.05);
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 86, 179, 0.1);
+}
+
+.form-range {
+    height: 8px;
+    border-radius: 4px;
+}
+
+.form-range::-webkit-slider-thumb {
+    background-color: var(--aia-primary);
+    border: none;
+    width: 24px;
+    height: 24px;
+    margin-top: -8px;
+}
+
+.form-range::-moz-range-thumb {
+    background-color: var(--aia-primary);
+    border: none;
+    width: 24px;
+    height: 24px;
+}
+
+.form-range:focus::-webkit-slider-thumb {
+    box-shadow: 0 0 0 0.25rem rgba(0, 86, 179, 0.25);
+}
+
+.form-range:focus::-moz-range-thumb {
+    box-shadow: 0 0 0 0.25rem rgba(0, 86, 179, 0.25);
+}
+
+.slider-labels {
+    font-size: 0.875rem;
+    color: var(--aia-text-light);
+}
+
+/* 输入框样式 */
+.input-container {
+    background-color: rgba(0, 86, 179, 0.05);
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 86, 179, 0.1);
+}
+
+.input-group {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.input-group-text {
+    background-color: var(--aia-primary);
+    color: white;
+    border: none;
+    font-weight: 500;
+}
+
+.form-control {
+    border: 1px solid #dee2e6;
+    padding: 0.75rem 1rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.form-control:focus {
+    border-color: var(--aia-primary);
+    box-shadow: 0 0 0 0.25rem rgba(0, 86, 179, 0.25);
+}
+
+/* 表格样式 */
+.table {
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table thead th {
+    background-color: var(--aia-primary);
+    color: white;
+    border: none;
+    padding: 1rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.table tbody td {
+    padding: 1rem;
+    vertical-align: middle;
+    border-bottom: 1px solid #dee2e6;
+    text-align: center;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 86, 179, 0.05);
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(0, 86, 179, 0.1);
+}
+
+/* 图表容器 */
+.chart-container {
+    background-color: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    border: 1px solid rgba(0, 86, 179, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* 页脚样式 */
+footer {
+    background-color: var(--aia-text) !important;
+}
+
+footer h5 {
+    color: white;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+footer p, footer li {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+footer i {
+    color: var(--aia-accent);
+    width: 20px;
+}
+
+/* 工具提示 */
+.tooltip {
+    font-family: 'Noto Sans SC', sans-serif;
+}
+
+/* 动画效果 */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+/* 滚动动画 */
+.card-animate {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.card-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 延迟动画 */
+.delay-1 { transition-delay: 0.1s; }
+.delay-2 { transition-delay: 0.2s; }
+.delay-3 { transition-delay: 0.3s; }
+.delay-4 { transition-delay: 0.4s; }
+
+/* 间距工具 */
+.mt-6 { margin-top: 4rem !important; }
+.mb-6 { margin-bottom: 4rem !important; }
+.pt-6 { padding-top: 4rem !important; }
+.pb-6 { padding-bottom: 4rem !important; }
+
+/* 图标样式 */
+.fa-6x { font-size: 4rem; }
+.fa-7x { font-size: 5rem; }
+
+/* 徽章样式 */
+.badge {
+    padding: 0.5em 0.8em;
+    font-weight: 500;
+}
+
+/* 警告框样式 */
+.alert {
+    border: none;
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+}
+
+.alert-info {
+    background-color: rgba(0, 86, 179, 0.1);
+    color: var(--aia-primary);
+    border-left: 4px solid var(--aia-primary);
+}
+
+/* 表单开关 */
+.form-check-input:checked {
+    background-color: var(--aia-primary);
+    border-color: var(--aia-primary);
+}
+
+.form-check-input:focus {
+    border-color: var(--aia-primary);
+    box-shadow: 0 0 0 0.25rem rgba(0, 86, 179, 0.25);
+}
+
+/* 打印样式 */
+@media print {
+    .navbar, footer, .calculator-controls, .form-check {
+        display: none !important;
+    }
+
+    .card {
+        box-shadow: none !important;
+        border: 1px solid #dee2e6 !important;
+    }
+
+    .table {
+        break-inside: avoid;
+    }
+}
+
+/* 悬浮按钮样式 */
+.floating-action-buttons {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+}
+
+.floating-btn {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.floating-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 86, 179, 0.4) !important;
+}
+
+#share-btn {
+    background-color: var(--aia-success);
+    border-color: var(--aia-success);
+}
+
+#share-btn:hover {
+    background-color: #157347;
+    border-color: #157347;
+}
+
+#print-btn {
+    background-color: var(--aia-warning);
+    border-color: var(--aia-warning);
+}
+
+#print-btn:hover {
+    background-color: #e0a800;
+    border-color: #e0a800;
+}
+
+/* 模态框样式 */
+.modal-content {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+    .floating-btn {
+        width: 60px;
+        height: 60px;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    #share-btn {
+        bottom: 90px;
+    }
+
+    #print-btn {
+        bottom: 160px;
+    }
+}
